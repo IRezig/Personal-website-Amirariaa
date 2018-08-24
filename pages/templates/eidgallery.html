@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+<!-- load the path to your static files -->>
+{% load static %}
+
+{% block content %}
+
+<div class="container gallery-container">
+    <h1>My Collection</h1>
+    <p class="page-description text-center">2017/2018</p>
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/1.png' %}"  height="30">
+                        <img src="{% static 'images/eid/1.png' %}" alt="Park">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/2.png' %}">
+                        <img src="{% static 'images/eid/2.png' %}" alt="Bridge">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/3.png' %}">
+                        <img src="{% static 'images/eid/3.png' %}" alt="Tuneel">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/4.png' %}">
+                        <img src="{% static 'images/eid/4.png' %}" alt="Coast">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/5.png' %}">
+                        <img src="{% static 'images/eid/5.png' %}" alt="Rails">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/eid/6.png' %}">
+                        <img src="{% static 'images/eid/6.png' %}" alt="Traffic">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+        <script>
+         baguetteBox.run('.tz-gallery');"{% static 'images/eid/6.png' %}"
+
+{% endblock %}

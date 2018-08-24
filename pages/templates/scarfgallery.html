@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+<!-- load the path to your static files -->>
+{% load static %}
+
+{% block content %}
+
+<div class="container gallery-container">
+    <h1>Our Scarfs</h1>
+    <p class="page-description text-center">2017/2018</p>
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/1.png' %}"  >
+                        <img src="{% static 'images/scarfs/1.png' %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/4.png' %}">
+                        <img src="{% static 'images/scarfs/4.png' %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/3.png' %}">
+                        <img src="{% static 'images/scarfs/3.png' %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/2.png' %}">
+                        <img src="{% static 'images/scarfs/2.png' %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/1.png' %}">
+                        <img src="{% static 'images/scarfs/1.png' %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/sc.jpg' %}">
+                        <img src="{% static 'images/scarfs/sc.jpg' %}">
+                    </a>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/scarfs/scarves.jpg' %}">
+                        <img src="{% static 'images/scarfs/scarves.jpg' %}">
+                    </a>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'images/model6.png' %}">
+                        <img src="{% static 'images/model6.png' %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+        <script>
+         baguetteBox.run('.tz-gallery');
+        </script>
+
+{% endblock %}
